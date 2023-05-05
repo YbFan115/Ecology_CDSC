@@ -1,0 +1,13 @@
+[33mWARNING:[0m SINGULARITY_BIND and APPTAINER_BIND have different values, using the latter
+Traceback (most recent call last):
+  File "/gscratch/comdata/users/yibinfan/output/reddit_wiki_ecology/assign_features.py", line 83, in <module>
+    main()
+  File "/gscratch/comdata/users/yibinfan/output/reddit_wiki_ecology/assign_features.py", line 80, in main
+    filter_data.to_csv('./data/subred_fandom_features.csv', mode = "w", index = False)
+  File "/usr/lib/python3/dist-packages/pandas/core/generic.py", line 3170, in to_csv
+    formatter.save()
+  File "/usr/lib/python3/dist-packages/pandas/io/formats/csvs.py", line 185, in save
+    f, handles = get_handle(
+  File "/usr/lib/python3/dist-packages/pandas/io/common.py", line 493, in get_handle
+    f = open(path_or_buf, mode, encoding=encoding, errors=errors, newline="")
+FileNotFoundError: [Errno 2] No such file or directory: './data/subred_fandom_features.csv'

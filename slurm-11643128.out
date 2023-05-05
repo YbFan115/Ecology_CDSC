@@ -1,0 +1,19 @@
+[33mWARNING:[0m SINGULARITY_BIND and APPTAINER_BIND have different values, using the latter
+Traceback (most recent call last):
+  File "/gscratch/comdata/users/yibinfan/output/reddit_wiki_ecology/assign_features.py", line 83, in <module>
+    main()
+  File "/gscratch/comdata/users/yibinfan/output/reddit_wiki_ecology/assign_features.py", line 67, in main
+    filter_data = pd.read_csv('top_mentioning_cleaning.csv')
+  File "/usr/lib/python3/dist-packages/pandas/io/parsers.py", line 688, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/usr/lib/python3/dist-packages/pandas/io/parsers.py", line 454, in _read
+    parser = TextFileReader(fp_or_buf, **kwds)
+  File "/usr/lib/python3/dist-packages/pandas/io/parsers.py", line 948, in __init__
+    self._make_engine(self.engine)
+  File "/usr/lib/python3/dist-packages/pandas/io/parsers.py", line 1180, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/usr/lib/python3/dist-packages/pandas/io/parsers.py", line 2010, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 382, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 674, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: [Errno 2] No such file or directory: 'top_mentioning_cleaning.csv'
